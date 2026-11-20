@@ -21,7 +21,7 @@ class Requisition:
 
         while True:
             date_input = input("Date (DD-MM-YYYY): ")
-            if date_input == "":
+            if date_input.replace(" ", "") == "":
                 print("Date cannot be empty. Please try again.")
             else:
                 self.date = date_input
