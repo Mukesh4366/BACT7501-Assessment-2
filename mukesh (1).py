@@ -224,8 +224,13 @@ class RequisitionSystem:
             if another_req == "no":
                 break
 
+        print("\nInitial Requisition Statistics")
+        self.display_statistics()
+
         self.review_pending_requisitions()
         self.display_all_requisitions()
+
+        print("\nFinal Requisition Statistics")
         self.display_statistics()
 
 
